@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="African Foods Company – discover traditional African meals, pantry favourites and spices.">
+  <title>African Foods Company | Taste of Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topline">A taste of home, wherever you are <span>•</span> Proudly celebrating African food</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="African Foods Company home">
+      <span class="brand-mark">AFC</span><span><strong>African Foods</strong><small>COMPANY</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Home</a><a href="#shop">Shop</a><a href="#about">Our Story</a><a href="#services">What We Offer</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-button" id="cartOpen" aria-label="Open shopping basket">Basket <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">GOOD FOOD. GREAT CULTURE.</p>
+        <h1>Bring the taste<br>of <em>Africa</em> home.</h1>
+        <p class="hero-copy">Discover much-loved African meals, pantry essentials and bold spices selected to bring people together around good food.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#shop">Explore our shop <span>→</span></a><a class="text-link" href="#about">Get to know us</a></div>
+        <div class="hero-note"><span class="note-icon">✦</span> Made for sharing. Inspired by tradition.</div>
+      </div>
+      <div class="hero-image" role="img" aria-label="A colourful spread of African food">
+        <div class="image-label"><strong>Flavours of home</strong><small>Tradition on every plate</small></div>
+      </div>
+      <div class="hero-stamp">TASTE<br>AFRICA</div>
+    </section>
+
+    <section class="benefits">
+      <div><span>✦</span><p><strong>Authentic flavours</strong><small>Inspired by African food culture</small></p></div>
+      <div><span>♡</span><p><strong>Made for sharing</strong><small>Food brings us together</small></p></div>
+      <div><span>⌂</span><p><strong>Everyday favourites</strong><small>Pantry staples and meal ideas</small></p></div>
+    </section>
+
+    <section class="section shop-section" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">A LITTLE SOMETHING FOR EVERYONE</p><h2>Shop our favourites</h2></div>
+        <p>Browse a selection of sample products. Product details and prices can be updated to match your actual business.</p>
+      </div>
+      <div class="shop-tools">
+        <div class="filters" role="group" aria-label="Filter products">
+          <button class="filter active" data-filter="all">All</button><button class="filter" data-filter="pantry">Pantry</button><button class="filter" data-filter="spices">Spices</button><button class="filter" data-filter="snacks">Snacks</button><button class="filter" data-filter="meals">Meals</button>
+        </div>
+        <label class="search-box"><span>⌕</span><input id="productSearch" type="search" placeholder="Search products..." aria-label="Search products"></label>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-category="pantry" data-name="maize meal">
+          <div class="product-photo photo-maize"><span class="product-tag">Pantry staple</span></div><div class="product-info"><div><h3>Maize Meal</h3><p>Everyday favourite for hearty meals</p></div><div class="product-bottom"><strong>R45.00</strong><button class="add-btn" data-product="Maize Meal" data-price="45">Add +</button></div></div>
+        </article>
+        <article class="product-card" data-category="pantry" data-name="long grain rice">
+          <div class="product-photo photo-rice"></div><div class="product-info"><div><h3>Long Grain Rice</h3><p>A versatile kitchen essential</p></div><div class="product-bottom"><strong>R39.99</strong><button class="add-btn" data-product="Long Grain Rice" data-price="39.99">Add +</button></div></div>
+        </article>
+        <article class="product-card" data-category="spices" data-name="african spice blend">
+          <div class="product-photo photo-spice"><span class="product-tag">AFC pick</span></div><div class="product-info"><div><h3>African Spice Blend</h3><p>A fragrant blend for bold flavour</p></div><div class="product-bottom"><strong>R29.99</strong><button class="add-btn" data-product="African Spice Blend" data-price="29.99">Add +</button></div></div>
+        </article>
+        <article class="product-card" data-category="snacks" data-name="traditional snacks">
+          <div class="product-photo photo-snacks"></div><div class="product-info"><div><h3>Traditional Snacks</h3><p>A tasty treat to share</p></div><div class="product-bottom"><strong>R35.00</strong><button class="add-btn" data-product="Traditional Snacks" data-price="35">Add +</button></div></div>
+        </article>
+        <article class="product-card" data-category="pantry" data-name="dried beans">
+          <div class="product-photo photo-beans"></div><div class="product-info"><div><h3>Dried Beans</h3><p>Perfect for filling, comforting dishes</p></div><div class="product-bottom"><strong>R32.50</strong><button class="add-btn" data-product="Dried Beans" data-price="32.5">Add +</button></div></div>
+        </article>
+        <article class="product-card" data-category="meals" data-name="african meal platter">
+          <div class="product-photo photo-meal"></div><div class="product-info"><div><h3>African Meal Platter</h3><p>A sample prepared-meal option</p></div><div class="product-bottom"><strong>R120.00</strong><button class="add-btn" data-product="African Meal Platter" data-price="120">Add +</button></div></div>
+        </article>
+      </div>
+      <p class="demo-note">Student project demo: these products and prices are examples, not confirmed live stock or real selling prices.</p>
+    </section>
+
+    <section class="story-section" id="about">
+      <div class="story-image" role="img" aria-label="Traditional African food being prepared"></div>
+      <div class="story-copy"><p class="eyebrow">OUR STORY</p><h2>Food connects us<br>to our roots.</h2><p>African Foods Company is presented as a food business celebrating the variety, warmth and richness of African food. Our website brings traditional meals, pantry favourites and spices together in one welcoming place.</p><p>From everyday ingredients to special treats, our aim is to make exploring African flavours simple and enjoyable.</p><a class="btn btn-dark" href="#shop">Find your favourites <span>→</span></a></div>
+    </section>
+
+    <section class="section offer-section" id="services">
+      <div class="section-heading"><div><p class="eyebrow">MORE THAN A SHOP</p><h2>What we offer</h2></div><p>A simple overview of the product and service categories represented in this student website concept.</p></div>
+      <div class="offer-grid">
+        <div class="offer-card"><span>01</span><h3>Pantry essentials</h3><p>Staple ingredients such as maize meal, rice and beans for everyday cooking.</p></div>
+        <div class="offer-card"><span>02</span><h3>Spices & flavour</h3><p>Seasonings and spice blends to add character to home-cooked meals.</p></div>
+        <div class="offer-card"><span>03</span><h3>Meals & treats</h3><p>Traditional meal and snack ideas for family gatherings and sharing.</p></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div><p class="eyebrow">LET'S TALK FOOD</p><h2>Have a question<br>or an order enquiry?</h2><p>Send us a message using the form. Replace the demo contact details with the company's real information before publishing.</p><p class="contact-detail"><strong>Email:</strong> add-company-email@example.com<br><strong>Location:</strong> add business address, South Africa</p></div>
+      <form id="contactForm" class="contact-form"><label>Your name<input required name="name" placeholder="Enter your name"></label><label>Email address<input required type="email" name="email" placeholder="you@example.com"></label><label>Message<textarea required name="message" rows="4" placeholder="How can we help?"></textarea></label><button class="btn btn-primary" type="submit">Prepare message <span>→</span></button><small id="formMessage">This demo form opens your email app; it does not store submissions.</small></form>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">AFC</span><span><strong>African Foods</strong><small>COMPANY</small></span></a><p>Celebrating African food, culture and connection.</p><small>© <span id="year"></span> African Foods Company. Student website concept.</small></footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-panel" id="cartPanel" aria-label="Shopping basket" aria-hidden="true">
+    <div class="cart-heading"><h2>Your basket</h2><button id="cartClose" aria-label="Close basket">×</button></div>
+    <div id="cartItems" class="cart-items"><p class="empty-cart">Your basket is empty.</p></div>
+    <div class="cart-total"><span>Estimated total</span><strong id="cartTotal">R0.00</strong></div>
+    <button class="btn btn-primary checkout-btn" id="checkoutBtn">Enquire about order</button>
+    <small class="cart-disclaimer">Demo basket only. No payment is collected.</small>
+  </aside>
+  <script src="script.js"></script>
+</body>
+</html>
